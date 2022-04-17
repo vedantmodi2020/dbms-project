@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CASES FORM</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+<!-- CSS -->
+<style>
+.myForm {
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+font-size: 0.8em;
+width: 30em;
+padding: 1em;
+border: 1px solid #ccc;
+}
+
+.myForm * {
+box-sizing: border-box;
+}
+
+.myForm fieldset {
+border: none;
+padding: 0;
+}
+
+.myForm legend,
+.myForm label {
+padding: 0;
+font-weight: bold;
+}
+
+.myForm label.choice {
+font-size: 0.9em;
+font-weight: normal;
+}
+
+.myForm label {
+text-align: left;
+display: block;
+}
+
+.myForm input[type="text"],
+.myForm input[type="tel"],
+.myForm input[type="email"],
+.myForm input[type="datetime-local"],
+.myForm select,
+.myForm textarea {
+float: right;
+width: 60%;
+border: 1px solid #ccc;
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+font-size: 0.9em;
+padding: 0.3em;
+}
+
+.myForm textarea {
+height: 100px;
+}
+
+.myForm input[type="radio"],
+.myForm input[type="checkbox"] {
+margin-left: 40%;
+}
+
+.myForm button {
+padding: 1em;
+border-radius: 0.5em;
+background: #eee;
+border: none;
+font-weight: bold;
+margin-left: 40%;
+margin-top: 1.8em;
+}
+
+.myForm button:hover {
+background: #ccc;
+cursor: pointer;
+}
+</style>
+
+</head>
+<body>
+
+<form class="myForm" method="get" enctype="application/x-www-form-urlencoded" action="/html/codes/html_form_handler.cfm">
+    <form method="post" action="cases.php">
+<h1 style="font-size:30px;">CASES FORM</h1>
+
+<p>
+<label>Reported Date
+<input type="date" name="ReportedDate" required>
+</label>
+</p>
+
+<p>
+<label>Place
+<input type="text" name="Place" required>
+</label> 
+</p>
+
+<p>
+<label>Number of Cases
+<input type="number" name="NumberOfCases" required>
+</label> 
+</p>
+
+<p>
+<label>Cured Rate
+<input type="number" step=0.001 name="CuredRate">
+</label> 
+</p>
+
+<p>
+<label>Death Rate
+<input type="number" step=0.001 name="DeathRate">
+</label> 
+</p>
+
+<p>
+<label>CFR
+<input type="number" step=0.001 name="CFR">
+</label> 
+</p>
+
+<p>
+<label>Alert
+<input type="text" name="Alert" required>
+</label> 
+</p>
+
+<p>
+<label>ZPlace
+<input type="text" name="ZPlace" required>
+</label> 
+</p>
+
+
+<p><button>Submit Cases Details</button></p>
+
+</form>
+</from>
+</body>
+</html>

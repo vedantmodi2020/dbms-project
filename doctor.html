@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>DOCTOR FORM</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+<!-- CSS -->
+<style>
+.myForm {
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+font-size: 0.8em;
+width: 30em;
+padding: 1em;
+border: 1px solid #ccc;
+}
+
+.myForm * {
+box-sizing: border-box;
+}
+
+.myForm fieldset {
+border: none;
+padding: 0;
+}
+
+.myForm legend,
+.myForm label {
+padding: 0;
+font-weight: bold;
+}
+
+.myForm label.choice {
+font-size: 0.9em;
+font-weight: normal;
+}
+
+.myForm label {
+text-align: left;
+display: block;
+}
+
+.myForm input[type="text"],
+.myForm input[type="tel"],
+.myForm input[type="email"],
+.myForm input[type="datetime-local"],
+.myForm select,
+.myForm textarea {
+float: right;
+width: 60%;
+border: 1px solid #ccc;
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+font-size: 0.9em;
+padding: 0.3em;
+}
+
+.myForm textarea {
+height: 100px;
+}
+
+.myForm input[type="radio"],
+.myForm input[type="checkbox"] {
+margin-left: 40%;
+}
+
+.myForm button {
+padding: 1em;
+border-radius: 0.5em;
+background: #eee;
+border: none;
+font-weight: bold;
+margin-left: 40%;
+margin-top: 1.8em;
+}
+
+.myForm button:hover {
+background: #ccc;
+cursor: pointer;
+}
+</style>
+
+</head>
+<body>
+
+<form class="myForm" method="get" enctype="application/x-www-form-urlencoded" action="/html/codes/html_form_handler.cfm">
+<form action="doctor.php" method="post">
+    <h1 style="font-size:30px;">DOCTOR FORM</h1>
+
+<p>
+<label>Doctor ID
+<input type="number" name="doctor_id" required>
+</label> 
+</p>
+
+<p>
+<label>Doctor Name
+<input type="text" name="doctor_name" required>
+</label> 
+</p>
+
+<p>
+<label>Age
+<input type="number" name="age" required>
+</label> 
+</p>
+
+<fieldset>
+<legend>Gender</legend>
+<p><label class="choice"> <input type="radio" name="gender" required value="male"> Male </label></p>
+<p><label class="choice"> <input type="radio" name="gender" required value="female"> Female </label></p>
+<p><label class="choice"> <input type="radio" name="gender" required value="other"> Other </label></p>
+</fieldset>
+
+<p>
+<label>Experience in Years
+<input type="number" name="experience" required>
+</label> 
+</p>
+
+<p>
+<label>Hospital ID
+<input type="text" name="hospital_id" required>
+</label> 
+</p>
+
+<p><button>Submit Doctor Details</button></p>
+</form>
+</form>
+
+</body>
+</html>

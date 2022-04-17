@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Vaccination Center FORM</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+<!-- CSS -->
+<style>
+.myForm {
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+font-size: 0.8em;
+width: 30em;
+padding: 1em;
+border: 1px solid #ccc;
+}
+
+.myForm * {
+box-sizing: border-box;
+}
+
+.myForm fieldset {
+border: none;
+padding: 0;
+}
+
+.myForm legend,
+.myForm label {
+padding: 0;
+font-weight: bold;
+}
+
+.myForm label.choice {
+font-size: 0.9em;
+font-weight: normal;
+}
+
+.myForm label {
+text-align: left;
+display: block;
+}
+
+.myForm input[type="text"],
+.myForm input[type="tel"],
+.myForm input[type="email"],
+.myForm input[type="datetime-local"],
+.myForm select,
+.myForm textarea {
+float: right;
+width: 60%;
+border: 1px solid #ccc;
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+font-size: 0.9em;
+padding: 0.3em;
+}
+
+.myForm textarea {
+height: 100px;
+}
+
+.myForm input[type="radio"],
+.myForm input[type="checkbox"] {
+margin-left: 40%;
+}
+
+.myForm button {
+padding: 1em;
+border-radius: 0.5em;
+background: #eee;
+border: none;
+font-weight: bold;
+margin-left: 40%;
+margin-top: 1.8em;
+}
+
+.myForm button:hover {
+background: #ccc;
+cursor: pointer;
+}
+</style>
+
+</head>
+<body>
+
+<form class="myForm" method="get" enctype="application/x-www-form-urlencoded" action="/html/codes/html_form_handler.cfm">
+    <form action="vc.php" method="post">
+<h1 style="font-size:30px;">VACCINATION CENTER FORM</h1>
+
+<p>
+<label>Center ID
+<input type="number" name="CenterID" required>
+</label> 
+</p>
+
+<p>
+<label>Name
+<input type="text" name="Name" required>
+</label> 
+</p>
+
+<p>
+<label>Opens At
+<input type="time" name="OpensAt">
+</label> 
+</p>
+
+<p>
+<label>Closes At
+<input type="time" name="ClosesAt">
+</label> 
+</p>
+
+<p>
+<label>Available Vaccines
+<input type="number" name="AvailableVaccines">
+</label> 
+</p>
+
+<p>
+<label>Vaccine Name
+<input type="text" name="VaccineName" required>
+</label> 
+</p>
+
+<p><button>Submit Vaccination Center Details</button></p>
+    </form>
+</form>
+
+</body>
+</html>

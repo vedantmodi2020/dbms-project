@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>BENEFICIARY FORM</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+<!-- CSS -->
+<style>
+.myForm {
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+font-size: 0.8em;
+width: 30em;
+padding: 1em;
+border: 1px solid #ccc;
+}
+
+.myForm * {
+box-sizing: border-box;
+}
+
+.myForm fieldset {
+border: none;
+padding: 0;
+}
+
+.myForm legend,
+.myForm label {
+padding: 0;
+font-weight: bold;
+}
+
+.myForm label.choice {
+font-size: 0.9em;
+font-weight: normal;
+}
+
+.myForm label {
+text-align: left;
+display: block;
+}
+
+.myForm input[type="text"],
+.myForm input[type="tel"],
+.myForm input[type="email"],
+.myForm input[type="datetime-local"],
+.myForm select,
+.myForm textarea {
+float: right;
+width: 60%;
+border: 1px solid #ccc;
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+font-size: 0.9em;
+padding: 0.3em;
+}
+
+.myForm textarea {
+height: 100px;
+}
+
+.myForm input[type="radio"],
+.myForm input[type="checkbox"] {
+margin-left: 40%;
+}
+
+.myForm button {
+padding: 1em;
+border-radius: 0.5em;
+background: #eee;
+border: none;
+font-weight: bold;
+margin-left: 40%;
+margin-top: 1.8em;
+}
+
+.myForm button:hover {
+background: #ccc;
+cursor: pointer;
+}
+</style>
+
+</head>
+<body>
+
+<form class="myForm" method="post" enctype="application/x-www-form-urlencoded" action="beneficitory_connect.php">
+
+<h1 style="font-size:30px;">BENEFICIARY FORM</h1>
+
+<p>
+<label>Beneficiary ID
+<input type="number" name="BeneficiaryID" required>
+</label> 
+</p>
+
+<p>
+<label>Number of Doses Taken
+<input type="number" name="NumberOfDosesTaken">
+</label> 
+</p>
+
+<p>
+<label>Aadhar Number
+<input type="number" name="AadharNumber">
+</label> 
+</p>
+
+<p>
+<label>Name
+<input type="text" name="Name">
+</label> 
+</p>
+
+<p>
+<label>Date of Birth
+<input type="date" name="DateOfBirth" required>
+</label>
+</p>
+
+<p>
+<label>City
+<input type="text" name="city" required>
+</label> 
+</p>
+
+<p>
+<label>Street
+<input type="text" name="street" required>
+</label> 
+</p>
+
+<p>
+<label>State
+<input type="text" name="state" required>
+</label> 
+</p>
+
+<p>
+<label>Vaccinator ID
+<input type="number" name="VaccinatorID" required>
+</label> 
+</p>
+
+
+<input type="submit" class="btn btn-primary">
+
+</form>
+</form>
+
+</body>
+</html>
