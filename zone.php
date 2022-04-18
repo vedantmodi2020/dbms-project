@@ -2,7 +2,7 @@
 $alert = $_POST['Alert'];
 $place= $_POST['Place'];
 $Pincode= $_POST['Pincode'];
-$conn = new mysqli('localhost','root','Mahabharata@123','EX2');
+$conn = new mysqli('localhost','root','','ex1');
 if($conn->connect_error){
     die('Connection Failed : '.$conn->connect_error);
 }
