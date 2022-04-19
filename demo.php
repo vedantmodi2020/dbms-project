@@ -1,5 +1,5 @@
 <?php
 
-echo "First PHP program";
+echo "Record Entered Successfully";
 
 ?>

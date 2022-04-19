@@ -1,15 +1,15 @@
 <?php
-$bid = $_POST=['BeneficiaryID'];
-$ndk = $_POST=['NumberOfDosesTaken'];
-$Anumber = $_POST=['AadharNumber'];
-$Name = $_POST=['Name'];
+$bid = $_POST['BeneficiaryID'];
+$ndk = $_POST['NumberOfDosesTaken'];
+$Anumber = $_POST['AadharNumber'];
+$Name = $_POST['Name'];
 $date= $_POST['DateOfBirth'];
 $city = $_POST['city'];
 $street = $_POST['street'];
 $state = $_POST['state'];
 $Vid = $_POST['VaccinatorID'];
 
-$conn = new mysqli('localhost','root','Mahabharata@123','EX2');
+$conn = new mysqli('localhost','root','','Ex1',3308);
 if($conn->connect_error){
     die('Connection Failed : '.$conn->connect_error);
 }

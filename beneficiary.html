@@ -83,19 +83,19 @@ cursor: pointer;
 </head>
 <body>
 
-<form class="myForm" method="post" enctype="application/x-www-form-urlencoded" action="demo.php">
+<form class="myForm" method="post" enctype="application/x-www-form-urlencoded" action="beneficitory_connect.php">
 
 <h1 style="font-size:30px;">BENEFICIARY FORM</h1>
 
 <p>
 <label>Beneficiary ID
-<input type="number" name="BeneficiaryID" required>
+<input type="number" name="BeneficiaryID" required >
 </label> 
 </p>
 
 <p>
 <label>Number of Doses Taken
-<input type="number" name="NumberOfDosesTaken">
+<input type="number" name="NumberOfDosesTaken" minlength="1" maxlength="1" >
 </label> 
 </p>
 
@@ -107,31 +107,31 @@ cursor: pointer;
 
 <p>
 <label>Name
-<input type="text" name="Name">
+<input type="text" name="Name" >
 </label> 
 </p>
 
 <p>
 <label>Date of Birth
-<input type="date" name="DateOfBirth" required>
+<input type="text" name="DateOfBirth" required>
 </label>
 </p>
 
 <p>
 <label>City
-<input type="text" name="city" required>
+<input type="text" name="city" required >
 </label> 
 </p>
 
 <p>
 <label>Street
-<input type="text" name="street" required>
+<input type="text" name="street" required >
 </label> 
 </p>
 
 <p>
 <label>State
-<input type="text" name="state" required>
+<input type="text" name="state" required >
 </label> 
 </p>
 
